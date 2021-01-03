@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Audio.GPL</id>
-    <version>0.0.2-alpha</version>
+    <version>0.0.3-alpha</version>
     <title>VL.Audio.GPL</title>
-    <authors>NAudio, vvvv, Adam Stark</authors>
+    <authors>NAudio, vvvv, Adam Stark, Matthias Husinsky</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/vl.audio.gpl</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,7 +14,7 @@
     <tags>VL, audio, sound, analysis</tags>
 	<license type="expression">GPL-3.0-only</license>
 	<dependencies>
-		<dependency id="VL.Audio" version="0.2.9-alpha" />
+		<dependency id="VL.Audio" version="0.2.18-alpha" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>

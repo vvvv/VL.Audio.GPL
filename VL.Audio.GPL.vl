@@ -690,7 +690,7 @@
                   <Patch Id="TK5fEs89oT6LHdq99GBEXc" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="E1sFuFjLwBWMtPQ0CxfIpb" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="38,425,85,26" Id="OUi5GOUcXy2LoTSGSBqNzN">
-                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VVVV.Audio.BTrack.dll">
+                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VL.Audio.GPL.BTrack.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="NotifyBeatRead" />
                     </p:NodeReference>
@@ -747,11 +747,12 @@
                 <Pin Id="IP2SWU6bmHvPEoYULPoRJw" Name="Force" Kind="InputPin" />
                 <Pin Id="AfQoChL0BszODZBZ79nsxN" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="RC4xGknAwbJONJw8aYgWG5" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="Ns98OnsnuF2NiQ1R9UKd5z" Bounds="949,133" Alignment="Top" />
                 <Patch Id="QkqmQLBT2miLsgaU2rlza6" ManuallySortedPins="true">
                   <Patch Id="VRArqKfqGLrNODL0oQ3nWo" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="VB5IyJ64gzsLha0Lq988sy" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="909,182,70,26" Id="SEFEIpkCaLjOsUvRB06ZAK">
-                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VVVV.Audio.BTrack.dll">
+                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VL.Audio.GPL.BTrack.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="BTrackSignal" />
                       <Choice Kind="OperationCallFlag" Name="NotifyAlpha" />
@@ -769,7 +770,6 @@
                     <Pin Id="VRAPdF8HauYQZJK4e5aRGb" Name="Result" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="Ns98OnsnuF2NiQ1R9UKd5z" Bounds="949,133" Alignment="Top" />
               </Node>
               <ControlPoint Id="KKN0KCf8H08QCqR8zhphLm" Bounds="949,23" />
               <Node Bounds="1060,116,157,107" Id="D11V2qecUA2NQ9MyoF5ldz">
@@ -781,11 +781,13 @@
                 <Pin Id="BnlH5abpck2PdQoFzjBsBK" Name="Force" Kind="InputPin" />
                 <Pin Id="SQ58sE8FcbyNGsrjWC8fVW" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="Qlc83BzC9W5MSNxUqFE5rk" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="UBbAfmlmIlUNAvtbLFJqUL" Bounds="1112,128" Alignment="Top" />
+                <ControlPoint Id="GetLIoGNLfjNGRepiQFkgF" Bounds="1146,128" Alignment="Top" />
                 <Patch Id="TG0X7YfFt30PY6cRLgoPTI" ManuallySortedPins="true">
                   <Patch Id="TKY1W10vkGaLtYD4U9HaXq" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="LzPEzvZcsQvLYHMy2zutQP" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="1072,177,100,26" Id="KJZeUAlBWCmNOyQtqEAVsX">
-                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VVVV.Audio.BTrack.dll">
+                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VL.Audio.GPL.BTrack.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="BTrackSignal" />
                       <Choice Kind="OperationCallFlag" Name="NotifyFixedTempo" />
@@ -804,8 +806,6 @@
                     <Pin Id="UrGx64fzKwgLGNqo99S96Y" Name="Result" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="UBbAfmlmIlUNAvtbLFJqUL" Bounds="1112,128" Alignment="Top" />
-                <ControlPoint Id="GetLIoGNLfjNGRepiQFkgF" Bounds="1146,128" Alignment="Top" />
               </Node>
               <ControlPoint Id="O1ZM8KMRaclMcfHDPaOhDJ" Bounds="1112,23" />
               <ControlPoint Id="Qwu5hPq4wb6MnRPDZ29VXr" Bounds="1146,60" />
@@ -818,11 +818,12 @@
                 <Pin Id="BBfMH38P4NaOYcdqcPdV3L" Name="Force" Kind="InputPin" />
                 <Pin Id="Ci4OjUmSLQsN5a3Z1YrWnM" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="QnjlQlp1Gm1L4aHsyPD1r3" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="Sill7ttrMg7Pe1QHK5DgTS" Bounds="820,135" Alignment="Top" />
                 <Patch Id="TQSnwvdqA6fLtZnGoyw2Rk" ManuallySortedPins="true">
                   <Patch Id="IhIOVzE38k1NJKzSbFWdCW" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="U67ujcEwofnPTGEiiLT8Y0" Name="Then" ManuallySortedPins="true" />
                   <Node Bounds="708,187,115,26" Id="JkBGM0ipGcLPJxZxythl6X">
-                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VVVV.Audio.BTrack.dll">
+                    <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VL.Audio.GPL.BTrack.dll">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="AssemblyCategory" Name="BTrackSignal" />
                       <Choice Kind="OperationCallFlag" Name="NotifyTempoChanged" />
@@ -840,11 +841,10 @@
                     <Pin Id="EsraUcbU6LnLC9wPS5LThR" Name="Result" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="Sill7ttrMg7Pe1QHK5DgTS" Bounds="820,135" Alignment="Top" />
               </Node>
               <ControlPoint Id="KyHgjV4cuYAOGXy0vgOpjy" Bounds="820,23" />
               <Node Bounds="44,-136,62,26" Id="AkWTSHUy6jTP7730Qusakt">
-                <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VVVV.Audio.BTrack.dll">
+                <p:NodeReference LastCategoryFullName="VVVV.Audio.BTrackSignal" LastSymbolSource="VL.Audio.GPL.BTrack.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="BTrackSignal" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -969,6 +969,6 @@
   <NugetDependency Id="PaUHL5za7HqPeK0dRHzrgm" Location="VL.Skia" Version="2020.2.4" />
   <PlatformDependency Id="RxbAurPsJKDNP3ninoWrPV" Location="./lib/VVVV.Audio.Gist.dll" />
   <NugetDependency Id="DzVha2q6Wo1PYXHphCqqLV" Location="VL.Audio" IsFriend="true" Version="0.0.0.0" />
-  <PlatformDependency Id="GwYk7fkjsSxLF9FavPtHyQ" Location="./lib/VVVV.Audio.BTrack.dll" />
   <PlatformDependency Id="VGYoPY9lZ3rNtItwHoebLs" Location="./lib-native/x64/BTrackCLI.dll" />
+  <PlatformDependency Id="Tz4zvc8gEPXOHghyYJEMED" Location="./lib/netstandard2.0/VL.Audio.GPL.BTrack.dll" />
 </Document>

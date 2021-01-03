@@ -72,7 +72,11 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="VJpTBqpgDVXM0cA2bIPBQT" Name="Speed" Kind="InputPin" />
+            <Pin Id="VJpTBqpgDVXM0cA2bIPBQT" Name="Speed" Kind="InputPin" DefaultValue="1.2">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="GicMl0rxeQGO4bNJw0v4fJ" Name="Play" Kind="InputPin" />
             <Pin Id="QtYy2zj3g2XNEytfPVsjQm" Name="Output" Kind="OutputPin" />
             <Pin Id="SOj6YRjC47XM0xZ89HwXG4" Name="Duration" Kind="OutputPin" />
@@ -82,7 +86,7 @@
             <Pin Id="AJM47OGxetNLB58Huc07gJ" Name="Sample Rate" Kind="OutputPin" />
             <Pin Id="Q3zYwprVPyLNGlV98T0ugm" Name="Uncompressed Format" Kind="OutputPin" />
           </Node>
-          <Pad Id="AFhtajWa9EyOHDJs1skNrf" Comment="Play" Bounds="301,323,63,58" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="AFhtajWa9EyOHDJs1skNrf" Comment="Play" Bounds="399,320,63,58" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -245,7 +249,12 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Tovd0tkb6M3QQPGON1rdYT" Comment="Sample Rate" Bounds="628,272,58,15" ShowValueBox="true" isIOBox="true" Value="44100">
+          <Pad Id="FNqamVIslLPNedvpf5X920" Comment="Speed" Bounds="281,324,43,30" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CRscfxOxMAhNOEJgYRoHlR" Comment="Sample Rate" Bounds="627,316,50,15" ShowValueBox="true" isIOBox="true" Value="44100">
             <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
               <Choice Kind="TypeFlag" Name="AudioSampleRate" />
             </p:TypeAnnotation>
@@ -274,7 +283,8 @@
         <Link Id="OKEpuwmrEh2LnlpIJawT2e" Ids="NEyjfr6yRt1O5qgpe3YtxT,OdltFUzAhuvMDdN7YhQQas" />
         <Link Id="TriVhkKYrGENao8OwaJiZ9" Ids="PfsHkc9XTo3NliVMsZ6eZb,Aj5obJU4TYRLWgRt2sVTqt" />
         <Link Id="PkuDGQ39nZPMRMtki5BAB8" Ids="P9km3RdbjyJPRyTG4BdGgD,Sg8MDUuI8vTM6IrVENDBsC" />
-        <Link Id="EYFVxPNJ89jNgUqXKSpXXM" Ids="Tovd0tkb6M3QQPGON1rdYT,E9xJgDqZKuGPM7MbR8ujcf" />
+        <Link Id="NZsB6WWUfLhLbjdUXgo8FZ" Ids="FNqamVIslLPNedvpf5X920,VJpTBqpgDVXM0cA2bIPBQT" />
+        <Link Id="FezHIKZYdb9PC1Q19Z13uZ" Ids="CRscfxOxMAhNOEJgYRoHlR,E9xJgDqZKuGPM7MbR8ujcf" />
       </Patch>
     </Node>
   </Patch>
