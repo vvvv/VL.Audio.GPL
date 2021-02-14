@@ -6,4 +6,4 @@ Includes [Gist](https://github.com/adamstark/Gist) and [BTrack](https://github.c
 ## Using the library
 In order to use this library with vl you have to install the nuget that is available via nuget.org. For information on how to use nugets with vl, see [Managing Nugets](https://thegraybook.vvvv.org/new/reference/libraries/referencing.html#manage-nugets) in the vl documentation. As described there you go to the commandline and then type:
 
-    nuget install VL.Audio.GPL -pre
+    nuget install VL.Audio.GPL -Version 0.0.4-alpha
