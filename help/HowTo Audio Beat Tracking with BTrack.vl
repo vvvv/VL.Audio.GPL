@@ -117,7 +117,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KkUYf6DdhlFNHuncJM6TID" Bounds="629,293,265,19" ShowValueBox="true" isIOBox="true" Value="Important: BTrack only supports 44100 Hz!">
+          <Pad Id="KkUYf6DdhlFNHuncJM6TID" Bounds="589,269,265,19" ShowValueBox="true" isIOBox="true" Value="Important: BTrack only supports 44100 Hz!">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -126,7 +126,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IBQ8VSp7v5FNRQicQcZSx9" Bounds="685,433,243,54" ShowValueBox="true" isIOBox="true" Value="BufferSize of 512 samples seems to work most accurate. Change your Audio Settings accordingly.">
+          <Pad Id="IBQ8VSp7v5FNRQicQcZSx9" Bounds="590,295,243,54" ShowValueBox="true" isIOBox="true" Value="BufferSize of 512 samples seems to work most accurate. Change your Audio Settings accordingly.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -205,40 +205,6 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="643,362,165,19" Id="KSEsWK1LYG9LWdYDEJtvE5">
-            <p:NodeReference LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="DriverSettings" />
-            </p:NodeReference>
-            <Pin Id="Hv9NwGPrZnWLZQZbIOoUTs" Name="Driver" Kind="InputPin" />
-            <Pin Id="USxAGhFsnJtPtfkDVzseru" Name="Sample Rate" Kind="InputPin" />
-            <Pin Id="OZW6jOSetzFOLMMeZd1v6F" Name="Wasapi Input" Kind="InputPin" />
-            <Pin Id="I7MC3LNAQYLNKYP6CX2S0Y" Name="Desired Input Channels" Kind="InputPin" />
-            <Pin Id="OjP4isTtDauM2bgjmr9dMn" Name="Desired Input Channel Offset" Kind="InputPin" />
-            <Pin Id="Q8zBmgAe3inL3914iPpu28" Name="Desired Output Channels" Kind="InputPin" />
-            <Pin Id="Ee2D7ba4Lq1QZEjHzSZqFM" Name="Desired Output Channel Offset" Kind="InputPin" />
-            <Pin Id="VOl3IambadUPEihvfB1LMv" Name="Show Control Panel" Kind="InputPin" />
-            <Pin Id="BcwxLFCVrKTLPCeRcok1Zr" Name="Enabled" Kind="InputPin" />
-            <Pin Id="LOaZBinwimWLWDx6ExTlho" Name="Selected Driver" Kind="OutputPin" />
-            <Pin Id="UfZS1zJE16fL0LMPhyNlJO" Name="Sample Rate" Kind="OutputPin" />
-            <Pin Id="OfTGExTWxt3PQaZOWGHDJy" Name="Buffer Size" Kind="OutputPin" />
-            <Pin Id="BircguEXRJHLGUUn0bin5A" Name="Selected WASAPI Input Device" Kind="OutputPin" />
-            <Pin Id="VNVzTp3KLs3OH7gsO1x8Z8" Name="Available Input Channels" Kind="OutputPin" />
-            <Pin Id="Eo18ORXljZINKORVKlFA7C" Name="Open Input Channels" Kind="OutputPin" />
-            <Pin Id="SNQh74AXuMlQTEKGXAoOw1" Name="Available Output Channels" Kind="OutputPin" />
-            <Pin Id="UQvPgdHGnGdOK3xb8umRpG" Name="Open Output Channels" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Dq5hbqdsliDQCKYjClOq0W" Comment="Driver" Bounds="645,316,261,15" ShowValueBox="true" isIOBox="true" Value="ASIO: FlexASIO">
-            <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
-              <Choice Kind="TypeFlag" Name="AudioDevice" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="TQ4jqT9m0VmM5HXiBQeYcW" Comment="Sample Rate" Bounds="665,342,64,15" ShowValueBox="true" isIOBox="true" Value="44100">
-            <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
-              <Choice Kind="TypeFlag" Name="AudioSampleRate" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="TnnSw7yDSFpL6N9EhXqeNJ" Comment="Buffer Size" Bounds="691,406,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="138,709,532,19" Id="R0KOSNz49lVNVdPdODHC4g">
             <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -267,9 +233,6 @@
         <Link Id="K4hG5dkHYRmO1ipFF09QHB" Ids="QtYy2zj3g2XNEytfPVsjQm,N7otD8PaHBSL5ydm7Sr4uS" />
         <Link Id="Vvw2n78teEcL7HZz5hmQNK" Ids="QtYy2zj3g2XNEytfPVsjQm,B1r034yb4JuPE1nLxpzgeI" />
         <Link Id="NZsB6WWUfLhLbjdUXgo8FZ" Ids="FNqamVIslLPNedvpf5X920,VJpTBqpgDVXM0cA2bIPBQT" />
-        <Link Id="AVUjjOvTuDCP9YGI6I2kcE" Ids="Dq5hbqdsliDQCKYjClOq0W,Hv9NwGPrZnWLZQZbIOoUTs" />
-        <Link Id="OvyIhESxJ47LFYIE4m3SFz" Ids="TQ4jqT9m0VmM5HXiBQeYcW,USxAGhFsnJtPtfkDVzseru" />
-        <Link Id="Fd3Nb3GI2xXLlAOBu4QC8m" Ids="OfTGExTWxt3PQaZOWGHDJy,TnnSw7yDSFpL6N9EhXqeNJ" />
         <Link Id="Ssn9qEYYDlFPzZmBE4x9lY" Ids="QJkF2daswQJPp4IhOtwhoS,LP4aSqG5VyBMNVOh4AgfK6" />
         <Link Id="VlKZUPFp9n3QaLoz9lq0YD" Ids="FdePFGAU91kNg2w4KYjugl,TUR5N20cgOAOPGRtmiA4Uj" />
         <Link Id="Qq78IVq0lFkNCjerz3LEbg" Ids="JJ10vM0TgcaMyE7vMrBTVq,Mf4845Y8TnRLhHVmehHwSD" />

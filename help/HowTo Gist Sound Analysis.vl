@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NRFj6c0qwQ6LxUAc4mUrt8" LanguageVersion="2021.4.6.835" Version="0.128">
+<Document xmlns:p="property" Id="FImGhHaJZAuM4Pp854WH0T" LanguageVersion="2021.4.6.835" Version="0.128">
   <NugetDependency Id="Hmr7kILdlvPMagkfyf51Iz" Location="VL.CoreLib" Version="2021.4.6" />
   <Patch Id="HaulhrPXkyCPeLW2mKcS3k">
     <Canvas Id="KNuoeWiZ9dzNZrycJV80K9" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -303,39 +303,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="455,188,165,19" Id="Cld9TkJb8HwP2RIaKlhLS5">
-            <p:NodeReference LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="DriverSettings" />
-            </p:NodeReference>
-            <Pin Id="LgbLlahuZDFPvotJCocdWn" Name="Driver" Kind="InputPin" />
-            <Pin Id="UZMmz31H6mxO9pFJUcVvUV" Name="Sample Rate" Kind="InputPin" />
-            <Pin Id="B24Fy8Zhi8rM8BTOyB1mOb" Name="Wasapi Input" Kind="InputPin" />
-            <Pin Id="I5q6PnBK9HBMMBAh9tbzSN" Name="Desired Input Channels" Kind="InputPin" />
-            <Pin Id="QpfY76i6lxHOSz8iDYz1mc" Name="Desired Input Channel Offset" Kind="InputPin" />
-            <Pin Id="QBNesuFHPfsNFcGachNlzJ" Name="Desired Output Channels" Kind="InputPin" />
-            <Pin Id="KuJBYX5N14jLOZ6NsFzp25" Name="Desired Output Channel Offset" Kind="InputPin" />
-            <Pin Id="Vk87ZHhmVRZMo3UTyoGZBL" Name="Show Control Panel" Kind="InputPin" />
-            <Pin Id="BpfomryME3MQAGbWPJ2sOV" Name="Enabled" Kind="InputPin" />
-            <Pin Id="DG3jxyUmInrO1Ku0rEG6RC" Name="Selected Driver" Kind="OutputPin" />
-            <Pin Id="O3zwidM0tKvLsHgCDNlJbP" Name="Sample Rate" Kind="OutputPin" />
-            <Pin Id="T4DHyV75nmsLxivN3ZfU64" Name="Buffer Size" Kind="OutputPin" />
-            <Pin Id="S3m3Sq9DVOcNo5lSYyxE1t" Name="Selected WASAPI Input Device" Kind="OutputPin" />
-            <Pin Id="RhADkbMMMGlMvG4tyB3h5K" Name="Available Input Channels" Kind="OutputPin" />
-            <Pin Id="RGhBGqZXdykLJogX8RKtbL" Name="Open Input Channels" Kind="OutputPin" />
-            <Pin Id="ACFaTe1vjHxOU2DoNgM9Z3" Name="Available Output Channels" Kind="OutputPin" />
-            <Pin Id="FrQY77aC9aSPCxbYBlogUv" Name="Open Output Channels" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Du7LjdoRkM8O2edHjTAuTX" Comment="Driver" Bounds="457,142,261,15" ShowValueBox="true" isIOBox="true" Value="ASIO: FlexASIO">
-            <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
-              <Choice Kind="TypeFlag" Name="AudioDevice" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="Q3xREdXsKqKQEFMPsPw1UH" Comment="Sample Rate" Bounds="477,168,64,15" ShowValueBox="true" isIOBox="true" Value="44100">
-            <p:TypeAnnotation LastCategoryFullName="Audio" LastSymbolSource="VL.Audio.vl">
-              <Choice Kind="TypeFlag" Name="AudioSampleRate" />
-            </p:TypeAnnotation>
-          </Pad>
         </Canvas>
         <Patch Id="H7AXqgMBO7VM7Hjz3LIVIi" Name="Create" />
         <Patch Id="SAUdaIhMZdzNMFreYk25vB" Name="Update" />
@@ -373,8 +340,6 @@
         <Link Id="OD0vSEywxBqO5fMsdOVFQi" Ids="SrQ5hZgVNVEPASCXqhK6KV,HHMTWCSTlnBOmdg7gcaro5" />
         <Link Id="JxWAxrlgVTlNj1JpxRLRx7" Ids="SrQ5hZgVNVEPASCXqhK6KV,C8xC21fFtDzNw8RqPCtpRY" />
         <Link Id="UCcapbceFrfMvdVhbItt9j" Ids="SrQ5hZgVNVEPASCXqhK6KV,EZT0ZHCRJluO4eHaVvuo2D" />
-        <Link Id="CBjn6yDk7fHMogX3GPYIGk" Ids="Du7LjdoRkM8O2edHjTAuTX,LgbLlahuZDFPvotJCocdWn" />
-        <Link Id="TTTb9JZtJ7ZPg1EbVGQZUc" Ids="Q3xREdXsKqKQEFMPsPw1UH,UZMmz31H6mxO9pFJUcVvUV" />
       </Patch>
     </Node>
   </Patch>
