@@ -22,9 +22,9 @@ jobs:
       uses: nuget/setup-nuget@v1
       
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.29
+      uses: vvvv/PublishVLNuget@1.0.40
       with:
-        csproj: src\VL.Audio.GPL.BTrack\VL.Audio.GPL.BTrack.csproj 
+        csproj: src\VL.Audio.GPL.csproj 
         nuspec: deployment\VL.Audio.GPL.nuspec
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./deployment/nugeticon.png
