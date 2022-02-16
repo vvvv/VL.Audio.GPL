@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <OutputPath>..\lib\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BTrackCLI.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.0.1" />
+    <PackageReference Include="VL.Audio" Version="0.5.1-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BTrackCLI">
+      <HintPath>..\lib-native\x64\BTrackCLI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
