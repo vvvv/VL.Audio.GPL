@@ -3,3 +3,4 @@ bin/
 obj/
 /lib/netstandard2.0/*
 /.vl/
+/lib/net472/
