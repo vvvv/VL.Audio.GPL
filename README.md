@@ -1,4 +1,4 @@
-# VL.Audio
+# VL.Audio.GPL
 GPL licensed extensions to [VL.Audio](https://github.com/vvvv/VL.Audio).
 
 Includes [Gist](https://github.com/adamstark/Gist) and [BTrack](https://github.com/adamstark/Btrack) by Adam Stark.
