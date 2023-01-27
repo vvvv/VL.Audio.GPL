@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <Reference Include="BTrackCLI">
-      <HintPath>..\runtimes\win-x64\natives\BTrackCLI.dll</HintPath>
+      <HintPath>..\runtimes\win-x64\native\BTrackCLI.dll</HintPath>
     </Reference>
   </ItemGroup>
 
