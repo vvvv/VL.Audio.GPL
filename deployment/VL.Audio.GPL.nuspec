@@ -2,21 +2,21 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Audio.GPL</id>
-    <version>1.2.0-preview</version>
+    <version>1.3.0</version>
     <title>VL.Audio.GPL</title>
     <authors>NAudio, vvvv, Adam Stark, Matthias Husinsky</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/vl.audio.gpl</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>GPL licensed extensions for VL.Audio</summary>
     <description>GPL licensed extensions for VL.Audio</description>
     <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
     <tags>VL, audio, sound, analysis, beat, tracking, gist</tags>
 	<license type="expression">GPL-3.0-only</license>
 	<dependencies>
-		<dependency id="VL.Audio" version="1.2.0" />
-  </dependencies>
+		<dependency id="VL.Audio" version="1.8.4" />
+    </dependencies>
 	<icon>icon\nugeticon.png</icon>
+	<readme>docs\README.md</readme>
   </metadata>
   <files>
     <file src="..\lib\net472\VL.Audio.GPL.dll" target="lib\" exclude="" />
@@ -25,5 +25,6 @@
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
+	<file src="..\README.md" target="docs\" />
   </files>
 </package>
