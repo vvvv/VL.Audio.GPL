@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FImGhHaJZAuM4Pp854WH0T" LanguageVersion="2021.4.6.835" Version="0.128">
-  <NugetDependency Id="Hmr7kILdlvPMagkfyf51Iz" Location="VL.CoreLib" Version="2021.4.6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FImGhHaJZAuM4Pp854WH0T" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="Hmr7kILdlvPMagkfyf51Iz" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="HaulhrPXkyCPeLW2mKcS3k">
     <Canvas Id="KNuoeWiZ9dzNZrycJV80K9" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -16,20 +16,22 @@
       <Patch Id="AFt6082b9iLOjGTv1MbRl0">
         <Canvas Id="JS6RdkEeqU0MfrOyWUQHlK" CanvasType="Group">
           <Node Bounds="157,300,60,19" Id="Nuop8cIAGwTOWfLCrRRuny">
-            <p:NodeReference LastCategoryFullName="Audio.Sink" LastSymbolSource="VL.Audio.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Sink" LastDependency="VL.Audio.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AudioOut" />
             </p:NodeReference>
+            <Pin Id="AsP6pLBpSaMPWX2ysy5SqH" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="N7otD8PaHBSL5ydm7Sr4uS" Name="Input" Kind="InputPin" />
             <Pin Id="UuybLHh9euhOYkIzJUJEin" Name="Channel Offset" Kind="InputPin" />
           </Node>
-          <Node Bounds="138,208,145,19" Id="CK5E6GsX3jjM3tNG2DfbKe">
-            <p:NodeReference LastCategoryFullName="Audio.Source" LastSymbolSource="VL.Audio.vl">
+          <Node Bounds="138,208,165,19" Id="CK5E6GsX3jjM3tNG2DfbKe">
+            <p:NodeReference LastCategoryFullName="Audio.Source" LastDependency="VL.Audio.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AudioPlayer" />
             </p:NodeReference>
+            <Pin Id="JE5k3AazmMDLyliJTEU7gn" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="A5KHOQ1lmWzLo2GsAKRvdx" Name="Filename" Kind="InputPin" DefaultValue="">
-              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Path" />
               </p:TypeAnnotation>
             </Pin>
@@ -39,7 +41,7 @@
             <Pin Id="JNguRaRMlQjNHWUKeDo4lq" Name="Seek Time" Kind="InputPin" />
             <Pin Id="LU0GF4bvudUMSAR24RVy8e" Name="Do Seek" Kind="InputPin" />
             <Pin Id="NtsHqQ3Rd9fLwiBHu6IJ5g" Name="Volume" Kind="InputPin" DefaultValue="0.5">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
@@ -53,29 +55,30 @@
             <Pin Id="AJM47OGxetNLB58Huc07gJ" Name="Sample Rate" Kind="OutputPin" />
             <Pin Id="FrtrQUZUWEAQaJJ4DJEvOT" Name="Original Format" Kind="OutputPin" />
           </Node>
-          <Pad Id="AFhtajWa9EyOHDJs1skNrf" Comment="Play" Bounds="288,144,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="AFhtajWa9EyOHDJs1skNrf" Comment="Play" Bounds="300,163,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="RHV4VrWuXAbQAmJtKkIgLD" Comment="Duration" Bounds="163,256,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="SJROLY8WjxNQASDBrp8ns1" Comment="Position" Bounds="269,256,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="RyluhTTNf2XQEd6UtmN1tH" Comment="Loop" Bounds="198,144,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="RyluhTTNf2XQEd6UtmN1tH" Comment="Loop" Bounds="161,159,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NczlzSnIpakPDKwbNJDlUn" Comment="Filename" Bounds="139,90,195,5" ShowValueBox="true" isIOBox="true" Value="vvvv.mp3">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="NczlzSnIpakPDKwbNJDlUn" Comment="Filename" Bounds="139,90,195,15" ShowValueBox="true" isIOBox="true" Value="vvvv.mp3">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="139,558,51,26" Id="IiBlBD5ObR3OWpDS5SccpW">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Gist" />
               <Choice Kind="OperationCallFlag" Name="GetRMS" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="PyGSc2EvvvoLi3nx8Lizp3" Name="Input" Kind="StateInputPin" />
             <Pin Id="OWLtJz5Q0tpP2Whjk1wAo6" Name="Output" Kind="StateOutputPin" />
             <Pin Id="BFse2AxOJUzL1ZHAayVRc6" Name="RMS" Kind="OutputPin" />
@@ -100,11 +103,12 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="244,558,83,26" Id="Ek2Rg93NGiPPr77Xwrw4b0">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Gist" />
               <Choice Kind="OperationCallFlag" Name="GetPeakEnergy" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="ClCS9FkMkRfP645nW6hi9P" Name="Input" Kind="StateInputPin" />
             <Pin Id="GXyGVVmYRHYLmgI2mMsX0M" Name="Output" Kind="StateOutputPin" />
             <Pin Id="UKSmINYrzcqNSDJPmTE6Z4" Name="Peak Energy" Kind="OutputPin" />
@@ -117,10 +121,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="385,558,112,26" Id="GCkfXm0nh2gPAHHdulRxBW">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetZeroCrossingRate" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="CJfdJAtpcKlPgO6MRcA7km" Name="Input" Kind="StateInputPin" />
             <Pin Id="Dcis99HGAizLaepO1Ey8R2" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Ang1hweKmzEOqNZC0qLYws" Name="Zero Crossing Rate" Kind="OutputPin" />
@@ -133,10 +138,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="608,558,107,26" Id="VpXNEEG070LPhq9FbDUj5T">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSpectralCentroid" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="DzExbuGknxTOBhWAT1xTi3" Name="Input" Kind="StateInputPin" />
             <Pin Id="LkmROxXckZ7PmaTpl0Q446" Name="Output" Kind="StateOutputPin" />
             <Pin Id="JWSzX65ywjSPlzyrweOoHE" Name="Spectral Centroid" Kind="OutputPin" />
@@ -149,10 +155,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="773,558,92,26" Id="CFXn41Ghfz5NE81J01ryip">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSpectralCrest" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="JcNKnAlEZQUMgVFLM9qaJw" Name="Input" Kind="StateInputPin" />
             <Pin Id="LcQW4ca3wI3MUKyr9G7lIE" Name="Output" Kind="StateOutputPin" />
             <Pin Id="QEoUXqN8tl1O1M2z5p9lNq" Name="Spectral Crest" Kind="OutputPin" />
@@ -165,10 +172,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="938,558,105,26" Id="UP74gf6zX80OPgxq6pYXOO">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSpectralFlatness" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MtGcoonmeKmN4AbkxGtGfI" Name="Input" Kind="StateInputPin" />
             <Pin Id="C8Icg65W1gSO66D7XTKc5l" Name="Output" Kind="StateOutputPin" />
             <Pin Id="OZ5WB1F0zluNK8NdCcY7W6" Name="Spectral Flatness" Kind="OutputPin" />
@@ -181,18 +189,20 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="138,335,24,19" Id="GCR2VnXQdfHMQQ6dofPkxh">
-            <p:NodeReference LastCategoryFullName="Audio.Utils" LastSymbolSource="VL.Audio.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Utils" LastDependency="VL.Audio.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="+ (Spectral)" />
             </p:NodeReference>
+            <Pin Id="JDfAmy7xfJwL0zzhcMeOUa" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="B1r034yb4JuPE1nLxpzgeI" Name="Input" Kind="InputPin" />
             <Pin Id="QJkF2daswQJPp4IhOtwhoS" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="1170,558,109,26" Id="TlJTKtUSFZSLe7n3H3AwBR">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetEnergyDifference" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="U5hxjv6QVB7Nmm8szSzKGS" Name="Input" Kind="StateInputPin" />
             <Pin Id="GBP2eRFj3X8NpTrkmmTOv3" Name="Output" Kind="StateOutputPin" />
             <Pin Id="B7Erh1D6AT0QNpRlsNh5Lp" Name="Energy Difference" Kind="OutputPin" />
@@ -205,10 +215,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1335,558,115,26" Id="FRnJTilcliJPpMVRtvX0XT">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSpectralDifference" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="SBKGeNzvYmgQLuuybiNJHQ" Name="Input" Kind="StateInputPin" />
             <Pin Id="TDMFanEECEALPgqOSn4w1d" Name="Output" Kind="StateOutputPin" />
             <Pin Id="EOvwDP7TjPnO4PZvkQAszM" Name="Spectral Difference" Kind="OutputPin" />
@@ -221,10 +232,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1515,558,135,26" Id="NPRa7eUuhMFLodR5DtMt8Z">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSpectralDifferenceHWR" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="HHMTWCSTlnBOmdg7gcaro5" Name="Input" Kind="StateInputPin" />
             <Pin Id="MnWP7hDQy4kNjhBov8M0Rf" Name="Output" Kind="StateOutputPin" />
             <Pin Id="QWzi71s5QguQWEN8Febtns" Name="Spectral Difference HWR" Kind="OutputPin" />
@@ -237,10 +249,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1710,558,135,26" Id="SgO1asgfbmlQLo7QN9acVW">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetHighFrequencyContent" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="C8xC21fFtDzNw8RqPCtpRY" Name="Input" Kind="StateInputPin" />
             <Pin Id="O4fwtS5twu0NGMzfr9Ck4H" Name="Output" Kind="StateOutputPin" />
             <Pin Id="QauqqsR2DkeP6d1J0KZh5V" Name="High Frequency Content" Kind="OutputPin" />
@@ -253,10 +266,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="2002,558,68,26" Id="ScTd53Le4cHQUsvgSHRxSf">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis.Gist" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetPitchYin" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="EZT0ZHCRJluO4eHaVvuo2D" Name="Input" Kind="StateInputPin" />
             <Pin Id="Mkiko7C633xNFw4XtNvfA9" Name="Output" Kind="StateOutputPin" />
             <Pin Id="DeBG7jqUxI2M3gvSOWCbuU" Name="Pitch Yin" Kind="OutputPin" />
@@ -268,8 +282,8 @@
               <p:showslider p:Type="Boolean">true</p:showslider>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="H3n7vFTa9eNLzbOvtKBD4m" Bounds="444,292,509,39" ShowValueBox="true" isIOBox="true" Value="https://adamstark.co.uk/project/sound-analyser/">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="H3n7vFTa9eNLzbOvtKBD4m" Bounds="399,240,418,30" ShowValueBox="true" isIOBox="true" Value="https://adamstark.co.uk/project/sound-analyser/">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -277,8 +291,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BS3c895RE9POx8Ar94Mj6O" Bounds="444,257,489,30" ShowValueBox="true" isIOBox="true" Value="Find more informations about the analysis algorithms here: ">
-            <p:TypeAnnotation>
+          <Pad Id="BS3c895RE9POx8Ar94Mj6O" Bounds="399,205,489,30" ShowValueBox="true" isIOBox="true" Value="Find more informations about the analysis algorithms here: ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -287,22 +301,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="138,380,34,19" Id="SQlSPS6NaROOyoMT0XAqkI">
-            <p:NodeReference LastCategoryFullName="Audio.Analysis" LastSymbolSource="VL.Audio.GPL.vl">
+            <p:NodeReference LastCategoryFullName="Audio.Analysis" LastDependency="VL.Audio.GPL.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Gist" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Uv3tqMmW1iGL6ShxEMizd7" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Uw66jKGFNJuNMMgALRCpNB" Name="Audio In" Kind="InputPin" />
             <Pin Id="SrQ5hZgVNVEPASCXqhK6KV" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="Swc5yfRUkhnOURfpyUqGhv" Bounds="441,119,265,19" ShowValueBox="true" isIOBox="true" Value="Important: Gist only supports 44100 Hz!">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="H7AXqgMBO7VM7Hjz3LIVIi" Name="Create" />
         <Patch Id="SAUdaIhMZdzNMFreYk25vB" Name="Update" />
