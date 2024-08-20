@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="VL.Audio" Version="1.8.4" />
     <PackageReference Include="NAudio" Version="2.0.1" />
-    <PackageReference Include="VL.Audio" Version="0.5.1-alpha" />
   </ItemGroup>
 
   <ItemGroup>
