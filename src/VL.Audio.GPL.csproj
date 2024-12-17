@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,12 +22,12 @@
 
   <ItemGroup>
     <PackageReference Include="NAudio" Version="2.0.1" />
-    <PackageReference Include="VL.Audio" Version="0.5.1-alpha" />
+    <PackageReference Include="VL.Audio" Version="1.8.2" />
   </ItemGroup>
-
+	
   <ItemGroup>
     <Reference Include="BTrackCLI">
-      <HintPath>..\runtimes\win-x64\native\BTrackCLI.dll</HintPath>
+      <HintPath>..\lib\net6.0-windows\BTrackCLI.dll</HintPath>
     </Reference>
   </ItemGroup>
 
