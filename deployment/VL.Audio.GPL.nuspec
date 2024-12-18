@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Audio.GPL</id>
-    <version>1.3.0</version>
+    <version>1.3.0-preview</version>
     <title>VL.Audio.GPL</title>
     <authors>NAudio, vvvv, Adam Stark, Matthias Husinsky</authors>
     <owners>vvvv</owners>
